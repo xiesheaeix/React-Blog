@@ -1,13 +1,117 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+  background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+.logo {
+  margin: -1vmin 1vmin;
+  height: 5vmin;
+  width: 6vmin;
+}
+
+.navbar {
+  padding: 5vmin;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 0.2vmin solid white;
+}
+
+.navbar h1 {
+  margin-left: 4vmin;
+  color: #62DAFB;
+  font-size: 5vmin;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-left: 5vmin;
+  padding: 3vmin;
+}
+
+.navbar a:hover {
+  color: #62DAFB;
+}
+
+.content {
+  max-width: 80%;
+  margin: 5vmin auto;
+  padding: 5vmin;
+}
+
+.blog-preview {
+  padding: 3vmin 5vmin;
+  margin: 5vmin 0;
+  border-bottom: 0.3vmin solid white;
+  border-radius: 2vmin;
+  overflow:hidden
+}
+
+.blog-preview:hover {
+  box-shadow: 0.3vmin 0.6vmin 1vmin white;
+}
+
+.blog-preview h1 {
+  font-size: 1.8rem;
+  color: #62DAFB;
+  margin-bottom: 2vmin;
+}
+
+.blog-list a {
+ text-decoration: none;
+}
+
+.blog-details h2 {
+  font-size: 2.5rem;
+  color:#62DAFB;
+  margin-bottom: 4vmin;
+}
+
+.blog-details div {
+  margin: 5vmin auto;
+}
+
+.create {
+  max-width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+.create p {
+  color:aliceblue;
+}
+
+.create h2 {
+  font-size: 2.5rem;
+  color:#62DAFB;
+  margin-bottom: 8vmin;
+}
+
+.create input, .create textarea, .create select{
+  color: black;
+  width: 100%;
+  padding: 2vmin 5vmin;
+  margin: 5vmin 0;
+  border: 1vmin solid #62DAFB;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create button, .blog-details button {
+  background-color: #62DAFB;
+  border: 0;
+  color: black;
+  padding: 3vmin;
+  border-radius: 5vmin;
+  cursor: pointer;
 }
